@@ -49,4 +49,4 @@ jobs:
       - name: Upload
         run: rsync -crlOt ./PercentCalculator/PercentCalculator.jar ubuntu@3.123.232.27:/home/ubuntu/PercentCalculator.jar
       - name: Restart
-        run: ssh ubuntu@3.123.232.27 service percent-calculator restart
+        run: ssh ubuntu@3.123.232.27 sudo service percent-calculator restart
